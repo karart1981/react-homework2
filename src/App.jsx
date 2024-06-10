@@ -30,7 +30,7 @@ import './App.css';
           {
             photos.map((elm,i)=>{
               let style = i == index ? "active" : "";
-              return <img key={elm.id} src={elm.url} className={style}/>
+              return <img key={elm.id} src={elm.url} className={style} onClick={()=>setIndex(photos.indexOf(elm))}/>
             })
           }
       </div>
